@@ -17,8 +17,8 @@
 n = int( input( 'n = ' ) )
 lis = list(map(int, input('-> ').split()))
 n = len(lis)
-lis = lis + lis[:2]
+lis += lis[:2]
 ma = 0
 for i in range(n):
-    ma = max( ma, lis[i] + lis[i+1] + lis[i+2])
+    ma = max(ma, lis[i] + lis[i+1] + lis[i+2])
 print(ma)
